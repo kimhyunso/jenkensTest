@@ -16,4 +16,11 @@ public class TestController {
                 .body(user);
     }
 
+    @RequestMapping("/Test")
+    public ResponseEntity<String> getTest(){
+        return ResponseEntity.status(HttpStatus.OK)
+                .body("Hello");
+    }
+
+
 }
